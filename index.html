@@ -2,36 +2,37 @@
 <html> 
 <head> 
     <title>My Cloud Application</title> 
-    <style>
-        body {
-            background-color: #f4f7f6;
-            color: #333333;
-        }
-
-        h1 {
-            color: #b7e3b3;
-        }
-
-        h2 {
-            color: #555555;
-        }
-        h3 {
-            color: #222222;
-            border-top: 2px solid #0066cc;
-            padding-top: 10px;
-        }
-        img {
-            height:30px;
-            width:30px;
-        }
-    </style>
+    <style> 
+        body { 
+            background-color: #f4f7f6; 
+            color: #333333; 
+        } 
+        h1 { 
+            /* Changed to a darker green for better readability against the light background */
+            color: #2e7d32; 
+        } 
+        h2 { 
+            color: #555555; 
+        } 
+        h3 { 
+            color: #222222; 
+            border-top: 2px solid #0066cc; 
+            padding-top: 10px; 
+        } 
+        img { 
+            /* Removed the forced 30px width/height so your image displays at its intended size */
+            max-width: 100%;
+            height: auto; 
+        } 
+    </style> 
 </head> 
 <body> 
-    <img src="cloud-web-app/bird.jpg" alt="img not found" width=300px>
+    <!-- Fixed the width attribute by removing 'px' -->
+    <img src="cloud-web-app/bird.jpg" alt="Bird image" width="300"> 
     <h1>Welcome to Cloud Computing</h1> 
     <h2>My First Cloud Web Application</h2> 
     <p>This application is hosted using GitHub Pages.</p> 
-
+    
     <h3>Student Information</h3> 
     <p>Name: Prakash Kumar</p> 
     <p>Course: BCA</p> 
